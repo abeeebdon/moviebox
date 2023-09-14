@@ -115,3 +115,15 @@
   text-decoration: none;
   color: red;
 }
+
+.movie-container {
+  margin: 1rem;
+  padding: 0 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.movie {
+  border: 1px solid red;
+  min-height: 300px;
+}
