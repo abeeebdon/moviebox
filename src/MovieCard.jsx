@@ -10,6 +10,7 @@ const MovieCard = () => {
         const response = await fetch(url)
         const movie = await response.json
         setMovie(movie)
+        console.log(movie)
       } catch (error) {
         console.log(error)
       }
