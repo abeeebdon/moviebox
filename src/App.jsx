@@ -1,13 +1,18 @@
 import FeaturedMovie from './FeaturedMovie'
-import Grid from './Grid'
+import Footer from './Footer'
 import Head from './Head'
+import MovieCard from './MovieCard'
+import { Routes, Route } from 'react-router-dom'
+import Landing from './pages/Landing'
+import About from './pages/About'
+import CardItem from './pages/CardItem'
 const App = () => {
   return (
-    <div>
-      <Head />
-      <FeaturedMovie />
-      <Grid />
-    </div>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/card/:id" element={<CardItem />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
   )
 }
 export default App
