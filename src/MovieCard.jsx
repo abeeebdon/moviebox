@@ -14,7 +14,6 @@ const MovieCard = () => {
         const response = await fetch(url)
         const more = await response.json()
         const data = more.results
-        console.log(data)
         const internal = data.slice(0, 12)
         setMovie(internal)
       } catch (error) {

@@ -10,7 +10,6 @@ const CardItem = () => {
 
   const { id } = useParams()
 
-  console.log(id)
   const url = `https://api.themoviedb.org/3/movie/${id}?api_key=891b47a130a4690a659df0fe2fdb3efe`
 
   useEffect(() => {
@@ -18,7 +17,6 @@ const CardItem = () => {
       try {
         const response = await fetch(url)
         const data = await response.json()
-        console.log(data)
         setMovieItem(data)
       } catch (error) {
         setIsError(true)

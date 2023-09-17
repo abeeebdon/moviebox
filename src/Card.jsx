@@ -12,7 +12,6 @@ const Card = ({
   id,
 }) => {
   const length = genre_ids.length
-  console.log(length)
   const genre = ['Drama  ', ' Action  ', ' Adventure  ']
   const genres = genre.slice(0, length)
   return (
