@@ -22,17 +22,21 @@ const Card = ({
         alt={title}
         className="image"
       ></img>
-      <h4 data-testid="movie-title">{title}</h4>
-      <p data-testid="movie-release-date">{release_date}</p>
+      <h4 data-testid="movie-title" className="text">
+        {title}
+      </h4>
+      <p data-testid="movie-release-date" className="text">
+        {release_date}
+      </p>
       <div className="ratings">
         <img src={imdb}></img>
-        <p className="rating-p">86.0/100</p>
+        <p>86.0/100</p>
         <div>
           <img src={tomato}></img>
           <p style={{ display: 'inline' }}>70%</p>
         </div>
       </div>
-      <p>{genres}</p>
+      <p className="text">{genres}</p>
     </Link>
   )
 }

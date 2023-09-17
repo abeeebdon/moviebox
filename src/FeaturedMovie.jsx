@@ -3,9 +3,7 @@ import right from './Images/right.png'
 const FeaturedMovie = () => {
   return (
     <div className="featured-movie">
-      <div>
-        <h2>Featured Movie</h2>
-      </div>
+      <h2>Featured Movie</h2>
       <div className="see-more">
         <a
           href="

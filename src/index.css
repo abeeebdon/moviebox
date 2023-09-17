@@ -6,9 +6,15 @@
   text-decoration: none;
   color: black;
 }
+body {
+  width: 100vw;
+}
+html {
+  font-size: 75%;
+}
 .head {
   padding: 0 2rem;
-  min-height: 70vh;
+  /* min-height: 70vh; */
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.5) 0%,
@@ -16,12 +22,14 @@
   );
   background-image: url('./Images/Poster.png');
   background-size: cover;
+  height: 65%;
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  gap: 1rem;
 }
 .header-input {
   flex-basis: 40%;
@@ -48,7 +56,7 @@
 
 .header-input input {
   color: white;
-  width: 250px;
+  width: 10rem;
   padding: 5px;
   border: none;
   outline: none;
@@ -106,8 +114,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 2rem;
 }
-
+.featured-movie h2 {
+  font-size: 1.6rem;
+}
 .see-more {
   display: flex;
   gap: 10px;
@@ -117,23 +128,12 @@
 .see-more a {
   text-decoration: none;
   color: red;
+  font-size: 1.6rem;
 }
 
-.movie-container {
-  margin: 1rem;
-  padding: 0 2rem;
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
-}
-.movie {
-  border: 1px solid red;
-  min-height: 300px;
-}
 .grid {
   display: grid;
   gap: 2rem;
-  column-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
   margin: 1.5rem 0rem 1.5rem 2rem;
@@ -143,13 +143,14 @@
   width: auto;
 }
 .image {
-  width: 300px;
-  height: 400px;
+  width: 30rem;
+  height: 40rem;
 }
 .ratings {
   display: flex;
-  gap: 20px;
+  gap: 1.2rem;
   margin: 0.5rem 0px;
+  font-size: 1.2rem;
 }
 
 /* ............Styling The Footer............ */
@@ -239,10 +240,10 @@
   padding: 2rem;
 }
 .text {
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0rem;
   text-align: left;
-  padding: 0px 1rem;
-  font-size: 1.2rem;
+  padding: 0px 0rem;
+  font-size: 1.4rem;
 }
 .flex {
   display: flex;
@@ -278,4 +279,82 @@ button.block {
   border-radius: 10px;
   border: 1px solid #be123c;
   background: rgba(190, 18, 60, 0.1);
+}
+
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 80%;
+  }
+  .header {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100vw;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 80%;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100vw;
+    margin: 0;
+    padding: 1rem;
+  }
+  .image {
+    width: 20rem;
+    height: 25rem;
+  }
+
+  .head {
+    padding: 0 0.5rem;
+    width: 95vw;
+  }
+}
+@media (max-width: 750px) {
+  .head {
+    padding: 0;
+    margin: 0;
+  }
+  .header-input {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .image {
+    width: 20rem;
+    height: 30rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .grid {
+    display: block;
+    width: 100vw;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+  .ratings {
+    margin: 0 auto;
+  }
+  .image {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .head {
+    padding: 0 0.5rem;
+  }
 }
