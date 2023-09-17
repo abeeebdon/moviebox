@@ -4,7 +4,6 @@ import Head from './Head'
 import MovieCard from './MovieCard'
 import { Routes, Route } from 'react-router-dom'
 import Landing from './pages/Landing'
-import About from './pages/About'
 import CardItem from './pages/CardItem'
 const App = () => {
   return (

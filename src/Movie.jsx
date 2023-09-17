@@ -6,6 +6,8 @@ import img5 from './Images/Logout.png'
 import img6 from './Images/Rectangle 37.png'
 import img7 from './Images/List.png'
 import img8 from './Images/Two Tickets.png'
+import { Link } from 'react-router-dom'
+
 const Movie = ({
   release_date,
   overview,
@@ -18,9 +20,11 @@ const Movie = ({
   return (
     <div className="movie-wrapper">
       <div className="sidebar">
-        <div className="logo">
-          <img src={img1}></img>
-        </div>
+        <Link to={`/`}>
+          <div className="logo">
+            <img src={img1}></img>
+          </div>
+        </Link>
         <div className="logo">
           <img src={img4}></img>
           <p>Home</p>
