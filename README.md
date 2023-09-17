@@ -1,7 +1,7 @@
 # HNG Internship Task Two
 
 URL: "https://abeebdon-hng-task-two.netlify.app/",
-GITHUB: ''
+GITHUB: ' https://github.com/abeeebdon/hng-task-2.git'
 
 # The task is a video website with two pages built on one
 
