@@ -176,6 +176,7 @@ html {
   font-size: 1.2rem;
 }
 
+/* ...................Styling the next page............ */
 .movie-wrapper {
   display: flex;
   gap: 3rem;
@@ -184,23 +185,39 @@ html {
 }
 .sidebar {
   flex-basis: 30%;
+  margin: 1rem;
+
+  position: relative;
+}
+.sidebar-div {
   display: flex;
   margin: 1rem;
+  border: 1px solid black;
   border-radius: 0px 3rem 0px 3rem;
   flex-direction: column;
-  border: 1px solid black;
   text-align: center;
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .logo {
   margin: 0 auto;
   padding: 1rem;
   margin: 1rem;
-
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
+}
+.video {
+  padding: 1rem;
+  margin: 0px 1rem;
+  margin: 2rem;
+  padding: 2rem;
+  flex-basis: 60%;
 }
 .movie-image {
   width: 70vw;
@@ -233,12 +250,7 @@ html {
   padding: 1rem;
   margin-top: 1rem;
 }
-.video {
-  padding: 1rem;
-  margin: 0px 1rem;
-  margin: 2rem;
-  padding: 2rem;
-}
+
 .text {
   margin: 0.5rem 0rem;
   text-align: left;

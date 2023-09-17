@@ -20,31 +20,33 @@ const Movie = ({
   return (
     <div className="movie-wrapper">
       <div className="sidebar">
-        <Link to={`/`}>
+        <div className="sidebar-div">
+          <Link to={`/`}>
+            <div className="logo">
+              <img src={img1}></img>
+            </div>
+          </Link>
           <div className="logo">
-            <img src={img1}></img>
+            <img src={img4}></img>
+            <p>Home</p>
           </div>
-        </Link>
-        <div className="logo">
-          <img src={img4}></img>
-          <p>Home</p>
-        </div>
-        <div className="logo">
-          <img src={img2}></img>
-          <p>Movies</p>
-        </div>
-        <div className="logo">
-          <img src={img3}></img>
-          <p>Upcoming</p>
-        </div>
-        <div className="play-more">
-          <h3>Play Movies, quizzes and earn tickets</h3>
-          <p>50k people are playing</p>
-          <button>Start Playing</button>
-        </div>
-        <div className="logo">
-          <img src={img5}></img>
-          <p>Log out</p>
+          <div className="logo">
+            <img src={img2}></img>
+            <p>Movies</p>
+          </div>
+          <div className="logo">
+            <img src={img3}></img>
+            <p>Upcoming</p>
+          </div>
+          <div className="play-more">
+            <h3>Play Movies, quizzes and earn tickets</h3>
+            <p>50k people are playing</p>
+            <button>Start Playing</button>
+          </div>
+          <div className="logo">
+            <img src={img5}></img>
+            <p>Log out</p>
+          </div>
         </div>
       </div>
       <div className="video">
