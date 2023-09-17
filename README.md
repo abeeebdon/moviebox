@@ -57,3 +57,5 @@ Fetch movie details by ID: https://api.themoviedb.org/3/movie/{movie_id}
 
 Error Handling:
 Implement error handling to display meaningful error messages to users in case of API failures or other issues.
+
+# It was quite stressful plus other factors, Thanks HNG
