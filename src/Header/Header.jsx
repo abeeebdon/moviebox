@@ -1,9 +1,9 @@
-import img1 from './Images/Logo.png'
-import img2 from './Images/menu.png'
-import search from './Images/search.png'
+import img1 from '../Images/Logo.png'
+import img2 from '../Images/menu.png'
+import search from '../Images/search.png'
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <div className="logo">
         <img src={img1}></img>
       </div>
@@ -17,7 +17,7 @@ const Header = () => {
           <img src={img2}></img>
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 export default Header

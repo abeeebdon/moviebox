@@ -1,6 +1,6 @@
-import play from './Images/Play.png'
-import imdb from './Images/imdb.png'
-import tomato from './Images/Rotten Tomatoes (1).png'
+import play from '../Images/Play.png'
+import imdb from '../Images/imdb.png'
+import tomato from '../Images/Rotten Tomatoes (1).png'
 
 const Section1 = () => {
   return (

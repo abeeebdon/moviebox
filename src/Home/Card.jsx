@@ -1,6 +1,5 @@
-import play from './Images/Play.png'
-import imdb from './Images/imdb.png'
-import tomato from './Images/Rotten Tomatoes (1).png'
+import imdb from '../Images/imdb.png'
+import tomato from '../Images/Rotten Tomatoes (1).png'
 import { Link } from 'react-router-dom'
 
 const Card = ({

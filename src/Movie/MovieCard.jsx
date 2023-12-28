@@ -1,14 +1,14 @@
-import img1 from './Images/Logo1.png'
-import img2 from './Images/TV Show.png'
-import img3 from './Images/Movie Projector.png'
-import img4 from './Images/Home.png'
-import img5 from './Images/Logout.png'
-import img6 from './Images/Rectangle 37.png'
-import img7 from './Images/List.png'
-import img8 from './Images/Two Tickets.png'
+import img1 from '../Images/Logo1.png'
+import img2 from '../Images/TV Show.png'
+import img3 from '../Images/Movie Projector.png'
+import img4 from '../Images/Home.png'
+import img5 from '../Images/Logout.png'
+import img6 from '../Images/Rectangle 37.png'
+import img7 from '../Images/List.png'
+import img8 from '../Images/Two Tickets.png'
 import { Link } from 'react-router-dom'
 
-const Movie = ({
+const MovieCard = ({
   release_date,
   overview,
   title,
@@ -17,6 +17,7 @@ const Movie = ({
   runtime,
   id,
 }) => {
+  console.log(runtime)
   return (
     <div className="movie-wrapper">
       <div className="sidebar">
@@ -53,7 +54,7 @@ const Movie = ({
         <img
           src={`https://image.tmdb.org/t/p/w300/${poster_path}`}
           className="movie-image"
-        ></img>
+        />
         <div className="flex">
           <p data-testid="movie-release-date" className="text">
             Released: {release_date}
@@ -80,7 +81,6 @@ const Movie = ({
               <p className="movie-text">Stars: Tom Cruise, Miles Teller</p>
             </div>
           </div>
-
           <div>
             <button className="block" id="button1">
               <img src={img8}></img>See Showtimes
@@ -95,4 +95,4 @@ const Movie = ({
     </div>
   )
 }
-export default Movie
+export default MovieCard
