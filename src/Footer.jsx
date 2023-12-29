@@ -17,7 +17,7 @@ const Footer = () => {
         <p> Press Room</p>
       </div>
       <div>
-        <p> &copy 2021 MovieBox by Adriana Eka Prayudha</p>
+        <p> copyright @ 2021 MovieBox by Adriana Eka Prayudha</p>
       </div>
     </div>
   )
