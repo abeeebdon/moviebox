@@ -29,7 +29,7 @@ const App = () => {
     return <h2> Loading ........</h2>
   }
   if (isError) {
-    return <h2> There was an error ........</h2>
+    return <h2> There is an error ........</h2>
   }
   return (
     <Routes>

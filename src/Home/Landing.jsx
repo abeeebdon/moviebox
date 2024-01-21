@@ -1,7 +1,7 @@
 import Footer from '../Footer'
 import Head from '../Header/Head'
-import MovieCard from './MovieCard'
 import right from '../Images/right.png'
+import Card from './Card'
 
 const Landing = ({ movie, setMovie }) => {
   return (
@@ -11,10 +11,14 @@ const Landing = ({ movie, setMovie }) => {
         <h2>Featured Movie</h2>
         <div className="see-more">
           <span>See more</span>
-          <img src={right}></img>
+          <img src={right} />
         </div>
       </div>
-      <MovieCard movie={movie} setMovie={setMovie} />
+      <div className="grid">
+        {movie.map((playy) => {
+          return <Card key={playy.id} {...playy} data-testid="movie-card" />
+        })}
+      </div>
       <Footer />
     </div>
   )

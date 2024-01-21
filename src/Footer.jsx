@@ -3,13 +3,15 @@ import twitter from './Images/twitter.png'
 import youtube from './Images/youtube (1).png'
 import instagram from './Images/instagram.png'
 const Footer = () => {
+  const date = new Date()
+  const year = date.getFullYear()
   return (
     <div className="footer">
       <div className="images">
-        <img src={facebook}></img>
-        <img src={instagram}></img>
-        <img src={twitter}></img>
-        <img src={youtube}></img>
+        <img src={facebook} />
+        <img src={instagram} />
+        <img src={twitter} />
+        <img src={youtube} />
       </div>
       <div className="footer-text">
         <p>Conditions of Use</p>
@@ -17,7 +19,7 @@ const Footer = () => {
         <p> Press Room</p>
       </div>
       <div>
-        <p> copyright @ 2021 MovieBox by Adriana Eka Prayudha</p>
+        <p> copyright @ {year} MovieBox by Adriana Eka Prayudha</p>
       </div>
     </div>
   )

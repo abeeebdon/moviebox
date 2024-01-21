@@ -4,7 +4,7 @@ import tomato from '../Images/Rotten Tomatoes (1).png'
 
 const Section1 = () => {
   return (
-    <div className="section ">
+    <div className="section">
       <h1 className="heading">John Wick 3 : Parabellum</h1>
       <p className="wText">
         John Wick is on the run after killing a member of the international
@@ -12,12 +12,12 @@ const Section1 = () => {
         the target of hit men and women everywhere.
       </p>
       <div className="rating">
-        <img src={imdb}></img>
+        <img src={imdb} />
         <p className="wText">86.0/100</p>
-        <img src={tomato}></img>
+        <img src={tomato} />
       </div>
       <div className="play">
-        <img src={play}></img>
+        <img src={play} />
         <button>Watch Trailer</button>
       </div>
     </div>
