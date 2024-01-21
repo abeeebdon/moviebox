@@ -328,7 +328,6 @@ html {
     padding: 1rem;
   }
   .image {
-    width: 20rem;
     height: 25rem;
   }
 
@@ -345,6 +344,12 @@ html {
   .header-input {
     display: none;
   }
+  .section {
+    width: 100%;
+  }
+  .featured-movie {
+    padding: 0 1rem;
+  }
   .grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
@@ -353,8 +358,7 @@ html {
     padding: 1rem;
   }
   .image {
-    width: 20rem;
-    height: 30rem;
+    height: 25rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -372,7 +376,7 @@ html {
     display: none;
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .grid {
     display: block;
     width: 100%;
@@ -384,7 +388,6 @@ html {
     margin: 0 auto;
   }
   .image {
-    width: 20rem;
     height: 30rem;
   }
 
