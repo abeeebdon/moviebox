@@ -1,8 +1,9 @@
-import img1 from '../Images/Logo1.png'
+import img1 from '../Images/tv.png'
 import img2 from '../Images/TV Show.png'
 import img3 from '../Images/Movie Projector.png'
 import img4 from '../Images/Home.png'
 import img5 from '../Images/Logout.png'
+import '../sidebar.css'
 
 import { Link } from 'react-router-dom'
 
@@ -10,8 +11,9 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <Link to={`/`}>
-        <div className="logo">
+        <div className="sidebar-logo">
           <img src={img1} />
+          <h3 className="logo-text">MovieBox</h3>
         </div>
       </Link>
       <Link to={`/`}>

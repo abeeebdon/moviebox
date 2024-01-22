@@ -14,10 +14,10 @@ import Sidebar from './Sidebar'
 const MoviePage = ({ movie }) => {
   const { id } = useParams()
 
-  const moo = movie.find((moov) => moov.id.toString() === id)
+  const presentMovie = movie.find((moov) => moov.id.toString() === id)
 
   const { release_date, overview, title, backdrop_path, poster_path, runtime } =
-    moo
+    presentMovie
 
   return (
     <div className="movie-wrapper">
