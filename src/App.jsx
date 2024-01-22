@@ -6,6 +6,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [isError, setIsError] = useState(false)
   const [movie, setMovie] = useState(null)
+  const [movieActive, setMovieActive] = useState(null)
 
   const url =
     'https://api.themoviedb.org/3/movie/top_rated?api_key=891b47a130a4690a659df0fe2fdb3efe'
@@ -18,6 +19,7 @@ const App = () => {
         const data = more.results
         const internal = data.slice(0, 12)
         setMovie(internal)
+        setMovieActive(internal)
       } catch (error) {
         setIsError(true)
       }
@@ -33,7 +35,16 @@ const App = () => {
   }
   return (
     <Routes>
-      <Route path="/" element={<Landing movie={movie} setMovie={setMovie} />} />
+      <Route
+        path="/"
+        element={
+          <Landing
+            movie={movie}
+            setMovie={setMovie}
+            movieActive={movieActive}
+          />
+        }
+      />
       <Route
         path="/card/:id"
         element={<MoviePage movie={movie} setMovie={setMovie} />}

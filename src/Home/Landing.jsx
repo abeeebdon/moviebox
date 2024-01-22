@@ -4,13 +4,27 @@ import Head from '../Header/Head'
 import right from '../Images/right.png'
 import Card from './Card'
 
-const Landing = ({ movie, setMovie }) => {
+const Landing = ({ movie, setMovie, movieActive }) => {
   const [search, setSearch] = useState('')
+  const [err, setErr] = useState(false)
 
-  useEffect(() => {}, [search])
+  useEffect(() => {
+    const movieFilter = movieActive.filter((singleMovie) =>
+      singleMovie.title.match(search)
+    )
+    console.log(movieFilter)
+    if (movieFilter.length === 0) {
+      setMovie(movieActive)
+      setErr(true)
+    } else {
+      setErr(false)
+      setMovie(movieFilter)
+    }
+  }, [search])
+
   return (
     <div>
-      <Head search={search} setSearch={setSearch} />
+      <Head search={search} setSearch={setSearch} err={err} />
       <div className="featured-movie">
         <h2>Featured Movie</h2>
         <div className="see-more">
