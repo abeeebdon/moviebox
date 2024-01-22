@@ -87,8 +87,20 @@ html {
   color: red;
   padding: 0.5rem;
   top: 7%;
-  left: 60%;
   font-size: 1.5rem;
+  left: 60%;
+  animation: moving 1s ease-in-out;
+}
+
+@keyframes moving {
+  from {
+    left: 0%;
+    opacity: 0;
+  }
+  to {
+    left: 60%;
+    opacity: 5;
+  }
 }
 .section {
   padding: 2rem;
