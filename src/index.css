@@ -30,6 +30,18 @@ html {
   align-items: center;
   gap: 1rem;
   padding: 0.5rem;
+  width: 100%;
+}
+.logo {
+  padding: 1rem;
+}
+.logo-text {
+  color: #fff;
+  font-family: 'DM Sans';
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
 .header-input {
   flex-basis: 40%;
@@ -163,7 +175,7 @@ html {
 .footer {
   text-align: center;
   margin: 10px;
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 .footer-text,
@@ -176,6 +188,9 @@ html {
   margin: 10px;
 }
 
+.footer-icon {
+  font-size: 1.5rem;
+}
 .footer-text {
   margin: 10px;
   font-size: 1.2rem;
@@ -194,7 +209,6 @@ html {
 .sidebar {
   flex-basis: 30%;
   margin: 1rem;
-
   position: relative;
 }
 .sidebar-div {
@@ -212,9 +226,8 @@ html {
 }
 
 .logo {
-  margin: 0 auto;
-  padding: 1rem;
-  margin: 1rem;
+  padding-top: 1rem;
+  /* margin: 1rem; */
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -306,7 +319,8 @@ html {
   }
   .header {
     font-size: 1rem;
-    padding: 0.5rem;
+    padding: 0;
+    /* padding: 0.5rem; */
   }
   .grid {
     grid-template-columns: repeat(3, 1fr);

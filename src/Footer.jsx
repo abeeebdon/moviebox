@@ -1,22 +1,20 @@
-import facebook from './Images/fa-brands_facebook-square.png'
-import twitter from './Images/twitter.png'
-import youtube from './Images/youtube (1).png'
-import instagram from './Images/instagram.png'
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+
 const Footer = () => {
   const date = new Date()
   const year = date.getFullYear()
   return (
     <div className="footer">
       <div className="images">
-        <img src={facebook} />
-        <img src={instagram} />
-        <img src={twitter} />
-        <img src={youtube} />
+        <FaFacebook className="footer-icon" />
+        <FaInstagram className="footer-icon" />
+        <FaTwitter className="footer-icon" />
+        <FaYoutube className="footer-icon" />
       </div>
       <div className="footer-text">
-        <p>Conditions of Use</p>
-        <p> Privacy & Policy</p>
-        <p> Press Room</p>
+        <span>Conditions of Use</span>
+        <span> Privacy & Policy</span>
+        <span> Press Room</span>
       </div>
       <div>
         <p> copyright @ {year} MovieBox by Adriana Eka Prayudha</p>

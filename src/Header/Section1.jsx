@@ -6,7 +6,7 @@ const Section1 = () => {
   return (
     <div className="section">
       <h1 className="heading">John Wick 3 : Parabellum</h1>
-      <p className="wText">
+      <p className="wText" style={{ fontSize: '1.2rem' }}>
         John Wick is on the run after killing a member of the international
         assassins' guild, and with a $14 million price tag on his head, he is
         the target of hit men and women everywhere.
