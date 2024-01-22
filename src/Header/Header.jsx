@@ -1,8 +1,8 @@
 import img1 from '../Images/tv.png'
 import img2 from '../Images/menu.png'
-import search from '../Images/search.png'
-import { FaSearch } from 'react-icons/fa'
-const Header = () => {
+// import { FaSearch } from 'react-icons/fa'
+import { BiSearch } from 'react-icons/bi'
+const Header = ({ search, setSearch }) => {
   return (
     <section className="header">
       <div className="logo">
@@ -10,8 +10,13 @@ const Header = () => {
         <h3 className="logo-text">MovieBox</h3>
       </div>
       <div className="header-input">
-        <input type="text" placeholder="What do you want to search?" />
-        <FaSearch style={{ color: 'white' }} />
+        <input
+          type="text"
+          placeholder="What do you want to search?"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <BiSearch className="iconss" />
       </div>
       <div className="header-sign">
         <p className="wText">Sign in</p>
