@@ -7,12 +7,10 @@ import Card from './Card'
 const Landing = ({ movie, setMovie, movieActive }) => {
   const [search, setSearch] = useState('')
   const [err, setErr] = useState(false)
-
   useEffect(() => {
     const movieFilter = movieActive.filter((singleMovie) =>
-      singleMovie.title.match(search)
+      singleMovie.title.toUpperCase().match(search.toUpperCase())
     )
-    console.log(movieFilter)
     if (movieFilter.length === 0) {
       setMovie(movieActive)
       setErr(true)
