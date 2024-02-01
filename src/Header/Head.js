@@ -1,17 +1,15 @@
+import { useState } from 'react'
 import Side from '../Side'
 import Header from './Header'
 import Section1 from './Section1'
 
-const Head = ({
-  search,
-  setSearch,
-  err,
-  setSideBar,
-  sideBar,
-  handleSearch,
-  displaySearch,
-  setDisplaySearch,
-}) => {
+const Head = ({ search, setSearch, err }) => {
+  const [displaySearch, setDisplaySearch] = useState(false)
+  const [sideBar, setSideBar] = useState(false)
+
+  const handleSearch = () => {
+    setDisplaySearch(!displaySearch)
+  }
   return (
     <div className="head">
       <Header

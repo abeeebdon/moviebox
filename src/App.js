@@ -46,7 +46,7 @@ const App = () => {
         }
       />
       <Route
-        path="/card/:id"
+        path="/:id"
         element={<MoviePage movie={movie} setMovie={setMovie} />}
       />
     </Routes>

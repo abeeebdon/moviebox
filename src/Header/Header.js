@@ -12,9 +12,10 @@ const Header = ({
   return (
     <section className="header">
       <div className="logo">
-        <img src={img1} />
+        <img src={img1} alt="tv" />
         <h3 className="logo-text">MovieBox</h3>
       </div>
+      {/*displaySearch is to toggle when size is less than 750px don*/}
       <div
         className={
           displaySearch
@@ -28,14 +29,15 @@ const Header = ({
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <BiSearch className="iconss" />
+        <BiSearch className="search-icon" />
       </div>
       <div className="header-sign hide-header">
         <p className="wText">Sign in</p>
         <div className="img">
-          <img src={img2} />
+          <img src={img2} alt="img2" />
         </div>
       </div>
+      {/* display of toggle-icon is none until 750px*/}
       <div className="toggle-icon">
         <img
           src={img2}
