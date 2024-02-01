@@ -31,10 +31,10 @@ const Card = ({
         {release_date}
       </p>
       <div className="ratings">
-        <img src={imdb} />
+        <img src={imdb} alt="img" />
         <p>86.0/100</p>
         <div className="rating-box">
-          <img src={tomato} />
+          <img src={tomato} alt="image" />
           <p>70%</p>
         </div>
       </div>

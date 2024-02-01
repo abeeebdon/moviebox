@@ -12,23 +12,23 @@ const Sidebar = () => {
     <div className="sidebar">
       <Link to={`/`}>
         <div className="sidebar-logo">
-          <img src={img1} />
+          <img src={img1} alt="image1" />
           <h3 className="logo-text">MovieBox</h3>
         </div>
       </Link>
       <Link to={`/`}>
         <div className="logo">
-          <img src={img4} />
+          <img src={img4} alt="image4" />
           <p className="hide">Home</p>
         </div>
       </Link>
 
       <div className="logo hide">
-        <img src={img2} />
+        <img src={img2} alt="image2" />
         <p>Movies</p>
       </div>
       <div className="logo hide">
-        <img src={img3} />
+        <img src={img3} alt="image3" />
         <p>Upcoming</p>
       </div>
       <div className="play-more hide">
@@ -37,7 +37,7 @@ const Sidebar = () => {
         <button>Start Playing</button>
       </div>
       <div className="logo hide">
-        <img src={img5} />
+        <img src={img5} alt="image5" />
         <p>Log out</p>
       </div>
     </div>
