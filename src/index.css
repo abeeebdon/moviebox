@@ -98,11 +98,17 @@ html {
 
 .err {
   position: absolute;
-  color: red;
+  color: white;
+  background-color: red;
   padding: 0.5rem;
-  top: 7%;
+  border-radius: 0.5rem;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin: 0 auto;
+  top: 10%;
   font-size: 1.5rem;
-  left: 60%;
+  /* left: 60%; */
   animation: moving 1s ease-in-out;
 }
 
@@ -124,15 +130,16 @@ html {
   position: absolute;
   top: 11%;
   width: 90%;
-  margin: 0px 0.7rem;
+  margin: 0px 1.5rem;
+  padding: 5px 1.5rem;
 }
 @keyframes moving {
   from {
-    left: 0%;
+    top: 0%;
     opacity: 0;
   }
   to {
-    left: 60%;
+    top: 10%;
     opacity: 5;
   }
 }

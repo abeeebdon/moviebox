@@ -44,7 +44,7 @@ const Head = ({ search, setSearch, err }) => {
 
         {/* display of toggle-icon is none until 750px*/}
       </section>
-      {err && <p className="err">Movie Not Found</p>}
+      {err && <p className="err">Movie not found</p>}
       <Section1 />
     </div>
   )
