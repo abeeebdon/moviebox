@@ -12,7 +12,9 @@ body {
 html {
   font-size: 100%;
 }
-
+.hide {
+  display: none;
+}
 /*  The head component */
 .head {
   padding: 0 2rem;
@@ -120,10 +122,9 @@ html {
 }
 .show-search {
   position: absolute;
-  margin-bottom: 1rem;
-  top: 10%;
-  width: 85%;
-  margin-left: 0.5rem;
+  top: 11%;
+  width: 90%;
+  margin: 0px 0.7rem;
 }
 @keyframes moving {
   from {

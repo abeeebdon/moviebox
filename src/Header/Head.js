@@ -29,12 +29,13 @@ const Head = ({ search, setSearch, err }) => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <BiSearch className="search-icon" color="white" />
+          <BiSearch className="search-icon hide-header" color="white" />
         </div>
         <div className="header-sign">
           <BiSearch
-            className="search-icon"
+            className="search-icon toggle-icon"
             color="white"
+            size={48}
             onClick={() => setDisplaySearch(!displaySearch)}
           />
 
